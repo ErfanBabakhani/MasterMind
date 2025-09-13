@@ -25,5 +25,41 @@ Type `help` in the game for a detailed command list. Main commands include:
 - `exit` — Exit the game  
 
 > Notes:  
+
+
+
+# Master Mind Online 🎮
+
+A simple online implementation of the classic **Mastermind** game (CLI).  
+This project uses the [Mastermind API](https://mastermind.darkube.app) to create games, submit guesses, and delete games.
+
+---
+
+## 📖 About the Game
+Mastermind is a logic game where:
+
+- The server selects a secret 4-digit code.
+- You try to guess the code by submitting guesses.
+- After each guess, the server returns two values:
+  - ⚫️ **Black** → number of digits correct in the correct position  
+  - ⚪️ **White** → number of digits correct but in the wrong position  
+
+The game continues until you guess the entire code correctly.
+
+---
+
+## ▶️ Running the Program
+Run the project using **Swift**:
+
+```bash
+swift run
+
+## 📝 Available commands:
+  game              — Start a new game
+  guess <1234>      — Make a guess in the active game
+  delete <game_id>  — Delete a game
+  help              — Show help message
+  exit              — Exit the game
+
 > - Each guess must be **exactly 4 digits**, with values between 1..6.  
 > - Run the program with `--debug` to see the secret code in STDERR.
