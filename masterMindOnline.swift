@@ -191,5 +191,4 @@ func mainLoop() {
     }
 }
 
-// اجرای برنامه
 mainLoop()
