@@ -94,7 +94,6 @@ final class GameStore {
     }
 }
 
-// MARK: - Game logic
 
 func evaluate(secret: [Int], guess: [Int]) -> (black: Int, white: Int) {
     var blacks = 0
@@ -159,7 +158,6 @@ func printHelp() {
     """)
 }
 
-// MARK: - Main loop
 
 let debugMode = CommandLine.arguments.contains("--debug")
 let store = GameStore(debug: debugMode)
